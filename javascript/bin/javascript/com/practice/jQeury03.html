@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<input type="hidden" name="test" value="1">
+	<input type="hidden" name="test" value="2">
+	<input type="hidden" name="test" value="3">
+	
+	<input type="button" id="commentbtn" value="배열생성"/>
+</body>
+<script type="text/javascript">
+	$('#commentbtn').onn('click',function(){
+		var grpl = $('input[name=test]').length;
+		
+		//배열생성.
+		var grparr = new Array(grpl);
+		
+		//배열에 값 주입
+		for(var i = 0; i<grpl; i++){
+			grparr[i] = $('input[name=test]').eq(i).val();
+		}
+	});
+</script>
+</html>
