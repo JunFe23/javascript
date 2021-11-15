@@ -3,6 +3,30 @@
 <head>
 <meta charset="UTF-8">
 <title>Insert title here</title>
+<script>
+	// toggle 클릭
+	// show, hide
+		jQuery('#toggle').click(function () {  
+		    if($("#id").css("display") == "none"){   
+		        jQuery('#id').show();  
+		    } else {  
+		        jQuery('#id').hide();  
+		    }  
+		}); 
+
+	// block, none
+		jQuery('#toggle').click(function () {  
+		    if($("#id").css("display") == "none"){   
+		        jQuery('#id').css("display", "block");   
+		    } else {  
+		        jQuery('#id').css("display", "none");   
+		    }  
+		});  
+
+
+
+
+</script>
 </head>
 <body>
 
