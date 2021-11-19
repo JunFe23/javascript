@@ -14,13 +14,13 @@
 	console.log(day);
 	
 	
-	var month = new String(date.getMonth() + 1);
+	var month = new String(date.getMonth() + 1); // month 두자리로 저장.
 	month = month >= 10 ? month : '0' + month;
-	var day = new String(date.getDate());
+	var day = new String(date.getDate()); // day 두자리로 저장.
 	day = day >= 10 ? day : '0' + day;
 	
-	var korFormat = year + "-"+ month + "+" + day;
-	var engFormat = month + "/" + day + "/" + year;
+	var korFormat = year + "-"+ month + "+" + day; //  0000-00-00
+	var engFormat = month + "/" + day + "/" + year; // 00/00/0000
 </script>
 </head>
 <body>
